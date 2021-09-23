@@ -59,4 +59,53 @@
 
 ---
 
-## 
+## Line splicing
+
+- if backslash is at the end of single-line comment then the next line will also become a comment line but it is not in the case of multi-line comment.
+
+-eg:
+[![image.png](https://i.postimg.cc/fb81NLbJ/image.png)](https://postimg.cc/qtC1cpyT)
+
+- 32 keywords in C and additional 31 in C++
+
+## variables
+
+- should start with letter or _ but not with num
+- no space within variable name
+
+Types:
+
+1.Local
+
+- declared nd used inside block (can't be used outside block)
+
+2.Global
+
+- declared outside block so can be used by all funs
+
+3.Static
+
+- preserves its value in multiple fun calls
+
+4.Automatic
+
+- variables declared inside block are automatic and some are explicitly declared with **auto** keyword.
+- both behave as **local** variables
+
+5.External
+
+- shared between multiple C files 
+- declared with **extern** keyword (declared only not defined)
+- also **global**
+
+- constant variable(const) => when initialized can't change their value
+- In C, variables are statically scoped
+- global and static variables have 0 as default since they have fixed memory location
+
+## qns on variable declaration and scope
+
+1. 
+
+[![image.png](https://i.postimg.cc/zfgSxQpD/image.png)](https://postimg.cc/sB3hXwtb)
+
+Ans: When constant value starts with 0, it is octal so the value is 3*8 + 2 = 26
