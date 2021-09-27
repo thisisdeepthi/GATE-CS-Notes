@@ -109,3 +109,9 @@ Types:
 [![image.png](https://i.postimg.cc/zfgSxQpD/image.png)](https://postimg.cc/sB3hXwtb)
 
 Ans: When constant value starts with 0, it is octal so the value is 3*8 + 2 = 26
+
+- C allows a global variable to declare once again when first declaration is not initialized
+
+- const, enum, constexpr, macros => these are used to declare variable as constant
+
+- static nd global variables initialized by compiler so must be initialized with constant value in C but it is fine in cpp
