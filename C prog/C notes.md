@@ -68,6 +68,8 @@
 
 - 32 keywords in C and additional 31 in C++
 
+---
+
 ## variables
 
 - should start with letter or _ but not with num
@@ -102,6 +104,8 @@ Types:
 - In C, variables are statically scoped
 - global and static variables have 0 as default since they have fixed memory location
 
+---
+
 ## qns on variable declaration and scope
 
 1. 
@@ -115,3 +119,18 @@ Ans: When constant value starts with 0, it is octal so the value is 3*8 + 2 = 26
 - const, enum, constexpr, macros => these are used to declare variable as constant
 
 - static nd global variables initialized by compiler so must be initialized with constant value in C but it is fine in cpp
+
+---
+
+## Facts
+
+- no data type given, automatically convert to int 
+- signed => default modifier for char nd int
+- no modifiers for float (like short float, signed float gives compiler error)
+- long modifier is allowed in double but no other modifiers are used
+
+---
+
+## Storage classes
+
+[![image.png](https://i.postimg.cc/sxBk3Rhf/image.png)](https://postimg.cc/tnjSzwk8)
