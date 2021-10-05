@@ -128,9 +128,50 @@ Ans: When constant value starts with 0, it is octal so the value is 3*8 + 2 = 26
 - signed => default modifier for char nd int
 - no modifiers for float (like short float, signed float gives compiler error)
 - long modifier is allowed in double but no other modifiers are used
+- typedef also storage class. volatile nd const => type qualifiers
 
 ---
 
 ## Storage classes
 
 [![image.png](https://i.postimg.cc/sxBk3Rhf/image.png)](https://postimg.cc/tnjSzwk8)
+
+---
+
+## Const qualifier
+
+[![image.png](https://i.postimg.cc/LsvwZ01P/image.png)](https://postimg.cc/R36XkdGC)
+
+---
+
+## Register keyword
+
+- if we say a variable as register, we can't access it using pointer
+- register can be used with pointer variables
+- C doesn't allow multiple storage class. so register can't be used with static
+- only works locally not globally
+- no limit on no of register variables
+
+---
+
+## Extern keyword
+
+- to extend the visibility of variables/fns
+- when extern used with variable, it is declared not defined
+- when extern variable is declared with initialisation, it is taken as the defn of variable
+
+---
+
+## Static keyword
+
+- allocated memory in data segment not stack
+- initialized to 0 if not
+- initialized only using constant literals
+
+---
+
+## Return values
+
+- printf() => total no of characters printed or neg val if error
+- scanf() => total no of inputs scanned successfully or EOF if input failure occurs
+- getchar(), fgetc(), getc() => int not char
