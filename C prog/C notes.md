@@ -175,3 +175,26 @@ Ans: When constant value starts with 0, it is octal so the value is 3*8 + 2 = 26
 - printf() => total no of characters printed or neg val if error
 - scanf() => total no of inputs scanned successfully or EOF if input failure occurs
 - getchar(), fgetc(), getc() => int not char
+
+---
+
+## Scanset
+
+- scanf process only the things which are part of scanset 
+- eg: %[A-Z]s => this only store the capital letters
+- if first char is ^ , then it will stop reading fter that
+
+---
+
+| printf() | sprintf() | fprintf() |
+|----------|-----------|-----------|
+| print char stream of data on stdout console | instead of printing store it in char buffer | print the string content in file not in console |
+
+---
+
+## Operators
+
+[![image.png](https://i.postimg.cc/KvW6TZVL/image.png)](https://postimg.cc/vcW2FdGH)
+
+---
+
