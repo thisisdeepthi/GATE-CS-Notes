@@ -143,9 +143,22 @@ so the convert runs infinitely
 
 ---
 
+4. 
+
+```
+Let T be a full binary tree with 8 leaves. (A full binary tree has every level full.) Suppose two leaves a and b of T are chosen uniformly and independently at random. The expected value of the distance between a and b in T (i.e., the number of edges in the unique path between a and b) is (rounded off to 2 decimal places) ___________ .
+```
+
+***Ans: 4.25***
+
+**Explanation:**
+Refer this link: [Refer](https://testbook.com/question-answer/let-t-be-a-full-binary-tree-with-8-leaves-a-full--5d5ab5f9fdb8bb738c382cf3)
+
+---
+
 ## 2018 ques
 
-4. 
+5. 
 
 ```
 Consider the following C program.
@@ -182,7 +195,7 @@ Here *q points to start of struct which is 1
 
 ## 2017 ques
 
-5. 
+6. 
 
 ```
 Consider the following C program
@@ -212,7 +225,7 @@ Since we are comparing with unsigned int which is c, that -2(strlen(s)-strlen(t)
 
 ---
 
-6. 
+7. 
 
 ```
 The output of executing the following C program is ____________ .
