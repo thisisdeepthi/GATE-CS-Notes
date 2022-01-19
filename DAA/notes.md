@@ -33,6 +33,20 @@ Refer https://www.gatevidyalay.com/fractional-knapsack-problem-using-greedy-appr
 - either take an item completely or leave it
 - solved using dynamic programming
 
+Formula to find the value of cells in table is 
+
+```
+
+m[i,w] = max(m[i-1,w],m[i-1,w-w[i]]+value[i])
+
+i=row
+
+w=column
+
+value[i]=profits
+
+```
+
 ### Steps
 
 1. Draw a table say ‘T’ with (n+1)(n-no of items) number of rows and (w+1) (w- weight limit of knapsack) number of columns. Fill all the boxes of 0th row and 0th column with zeroes
