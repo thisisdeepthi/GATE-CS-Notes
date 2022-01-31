@@ -72,10 +72,13 @@
 ## Scheduling
 
 - Long term scheduler
+    - to **maintain a good degree of multiprogramming**
     - job scheduler
     - from disk to main mem
 - Short term scheduler
-    - CPU schedling
+    - to improve sys performance
+    - decides which process to execute next from ready queue
+    - CPU schedler
     - must be fast
     - does the job of job scheduler also in some sys
 - Middle term
@@ -108,7 +111,7 @@ Total AMAT = Page fault rate * MAT when page fault + (1-page fault rate) * MAT w
 - To implement, we need four DS
 
     - Allocation => resources allocated to particular process
-    - Max => max resources allocated to a particular process
+    - Max => max resources allocated to a particular process (1D matrix)
     - Available => resources currently available (1D matrix)
     - Need => Max - allocation
 
@@ -219,12 +222,83 @@ As the consumer is removing an item from buffer, therefore the value of â€œfullâ
 Arrival time - time at which process is arrived
 Completion time - at which process completed its execution
 Burst time - req by process for execution
-Turn around time - ```completion - arrival time```
-Waiting time - ```turn around - burst time```
+Turn around time - completion - arrival time
+Waiting time - turn around - burst time
+Response time - time at which process first gets cpu - arrival time
 ```
 
 1. FCFS
+
+- smaller arrival time
+- suffers from convoy effect
+- convoy effect => if higher burst time process arrive early then process with smaller burst time have to wait for a long time
+
 2. SJF
+
+- smaller burst time
+- non preemptive mode
+
 3. SRTF
+
+- preemptive mode of SJF
+
 4. Round robin
+
+- time quantum is given
+- always preemptive
+
 5. Priority
+
+- higher priority assigned first
+
+## Disk scheduling
+
+- to schedule multiple req for accessing the disk
+- seek time = time taken to locate the disk arm to a specified track where the data is to be read or write
+
+### Algorithms
+
+1. FCFS
+
+- services req in the order which they arrive
+
+2. SSTF
+
+- Shortest Seek Time First
+- services that request next which requires least number of head movements from its current position regardless of the direction.
+
+3. SCAN
+
+- also called as elevator algorithm
+- scans all the cylinders of the disk back and forth
+- head starts from one end and move towards the other end servicing all the req inbetween and the same happens when it moves from the other end to head 
+
+4. C-SCAN
+
+- Circular SCAN
+- Head starts from one end of the disk and move towards the other end servicing all the requests in between.
+- After reaching the other end, head reverses its direction.
+- It then returns to the starting end without servicing any request in between.
+
+5. LOOK
+
+- Head starts from the first request at one end of the disk and moves towards the last request at the other end servicing all the requests in between.
+- After reaching the last request at the other end, head reverses its direction.
+- It then returns to the first request at the starting end servicing all the requests in between.
+- The same process repeats.
+
+6. C-LOOK
+
+- Circular LOOK
+
+
+## Deadlock
+
+- The execution of two or more processes is blocked because each process holds some resource and waits for another resource held by some other process.
+
+- Conditions for occurence of deadlock
+    - Mutual exclusion
+    - Hold and wait
+    - No preemption
+    - Circular wait
+
